@@ -43,7 +43,7 @@ export const ToDoList = () => {
         <div aria-label="todos-todo" className={styles.todosWrapper}>
           <h1>To Do</h1>
           {todos.map(
-            (t: string, index) =>
+            (t: string, index: number) =>
               complete[index] === "todo" && (
                 <div className={styles.todo} key={index}>
                   <p className={styles.text}>{t}</p>
